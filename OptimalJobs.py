@@ -6,7 +6,7 @@ import os
 import sqlite3
 import tkinter as tk
 
-conn = sqlite3.connect("NEADataBase.db")
+conn = sqlite3.connect("OJDataBase.db")
 cursor = conn.cursor()
 
 cursor.execute("""CREATE TABLE IF NOT EXISTS User
