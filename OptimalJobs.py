@@ -1,3 +1,6 @@
+## This project is intended to be run on any system and aims to teach me the complete process of system creation.
+## Therefore, functionalities that are typically not included in most systems, such as database creation, are integrated into this system.
+
 from tkinter import *
 from tkinter import ttk
 from tkinter.messagebox import askyesno
