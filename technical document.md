@@ -93,3 +93,122 @@ Then, due to the large level if interest in the ability to save data externally 
 Next, the ability of admin access was seen to be a necessary addition to the application as the ability for a user to be able to create any job listings they want could lead to impersonation or inappropriate jobs listings being created. The admin account would be able to delete any job listings no mater if they made it or not allowing the ability for moderation of the server. 
 
 Finally, the creation of the database to allow the user to save their favourites, account, job listing, and applications will have to be made to allow the user to have all the needed information without making the application too complicated. 
+
+### Potential technical solution:
+#### Website-based application:
+A possible solution would be through the creation of a client-based website. This would allow users to access this service from any part of the world. In addition to this, the website would use a server that contains all user and job details. The page would use a user key and a UserID, containing all user data. This would be accessed once logged in. 
+
+##### Advantages
+Creating a website-based application would have personal benefits related to gaining knowledge and understanding of coding a website in HTML or JavaScript. It also has the potential to become a functional business. The website would run though a server, so the processing time would be much quicker than if all the data was being processed by local devices. It would also allow a much larger amount of data to be held in the database, increasing the possible number of users and jobs available. Furthermore, the process of distributing this service would be much simpler and faster than having to send user code and the database though a service, such as email.
+
+##### Disadvantages
+A website-based application would have a large range of expenses related to it, as a domain and server would need to be purchased. In addition to this, the maintenance crew needed to maintain the servers daily would lead to extra cost in wages. Moreover, the complexity needed to write the level of code in HTML would be extremely demanding and unrealistic without a large amount of code being found on the internet. On top of this, the continuous debugging would be frustrating.
+
+#### Procedural Programming:
+Another possible solution to this problem would be creating the application in Python, using functions. These procedures would gather user input, such as the username and password. It would output data to the user, such as eligible jobs through print statement, on to a Python IDEL shell. The program would be built using subroutines to carry out procedures. Examples of this would be procedures allowing the user to log in and create an account. They would then gather data, which the user may use, but would not have any form of GUI (Graphical user interface) or interactive option past entering values. 
+
+##### Advantages 
+Creating a solution using Procedural Programming would have a range of benefits related to the time and complexity of the programming. This can be seen because the code will be simple to write as it is linear. It would therefore not take any learning or further research to create the necessary code. The complexity of the code means it would take up less memory than other methods. 
+
+##### Disadvantages 
+Procedural Programming can be seen as being better suited for the processing of data than looking after data. This makes Procedural Programming an unsuitable solution to the problem, as there is a large amount of data which needs to be processed, so it may not be updated in real time. Another disadvantage is that a procedural language does not use abstraction to modularise the code. This would mean that it is difficult to add new data types or function without going back to previous sections of the code and modifying them. 
+
+#### Object orientated programming:
+The final possible solution which is taken into consideration for the creation of the application is Object Orientated Programming (OOP). This is a programming model that organises software design around data and objects, rather than functions and logic. An object can be defined using classes that have unique attributes and behaviour. As the code is written in this way, it allows data to be affected without impacting other functions of the program and to run sections of the code using instantiation of the classes. Additionally, the code which relates to sections of the running codes can be split up to increase the efficiency. This is due to the fact that the code being run is only related to the correct function of the code. There are 4 main functions of OOP: abstraction, encapsulation, inheritance, and polymorphism.
+
+##### Advantage
+As code would be created in the form of objects, it can be reused and recalled at any time. The code running constantly increases efficiency and decreases the size of the code helping with the distribution of the application. Methods and attributes can be hidden, which would stop a user or programmer from changing essential sections of the code, as this would lead to unwanted outputs in the code. Code is also easier to add to and change due to all section of the code being modularised. This also helps with error checking, as they can be limited to small sections of code.
+
+##### Disadvantage
+Object Orientated programs are much larger files in comparison to their counterparts, such as procedural competitors. This is due to the increase in complexity and detail on GUI and code. This leads to the complete solution being much larger than other solutions requiring more time and energy to code and run. 
+
+#### Chosen solution: 
+Taking the advantages and disadvantages of a website-based application into consideration, I believe it would be in my best interest to use a different solution to the problem. This is due to the time needed to learn a web-based coding language, and because the running of a server, even if run from my laptop, would not be suitable for coursework of this scale.
+
+The possibility of the final solution being made with a mobile app has been taken into consideration but is seen to have the same advantage and disadvantages as a website. On one hand, it would have the possibility to send notifications to the user, which is seen to be a great advantage over all other possible solutions and would be the only one with the ability to do this. However, even taking this into consideration, the disadvantage outweighs the pros of making the final solution with a mobile app. 
+
+Considering the advantages and disadvantages of creating the final solution using Procedural Programming, I believe it would be a suitable solution, but it would not allow the depth or detail desired to put into the code. Therefore, it would not be functional if I decided to take this project further. Consequently, I will not be using it to create this application.
+
+Taking the advantages and disadvantages into account, I have chosen to use Object Orientated Programming for my final solution. The reason for this is the advantages related to code, which can be made using objects and methods. These will allow me to divide my programme into parts, which will indicate the different Tkinter windows in my code. This will lead to debugging being a lot easier and the source code being more logically structured, allowing for easy identification of sections of code. The next best option for my final solution would be Procedural Programming. However, it would not allow me to create a GUI, while Object Oriented Programming does. As classes in the code would represent each window, I used composition and instantiation to link them together. This is because it will allow the code to affect variables, and classes would not be running. Also, through the use of composition, windows can be run so that when the last window is closed, the new window remains running. Therefore, if instantiation is used to call the class it may also be destroyed when the container class gets destroyed. 
+
+A GUI will make the working environment for the user. This is cleaner, and it removes some of the difficulty around the use of the application. This will be done through Tkinter in the Python interface, a GUI library. I decided to use Tkinter because it will allow me to easily programme the interfaces and use different widgets that the library offers, such as entry boxes, labels, frames, etc.
+
+I will also be using SQL light, to store details and data in a database. SQL allows the subsets of information within a database to be selected, deleted, added to, or altered. It can also be used to add data to the database (which would be used when creating an account). For example, when a new account is made, details would be added to the database and functions like autoincrementing would be used to add UserID. I would need to create several tables which, through SQL, can be easily linked and can help sections of the code run smoothly.
+
+I will be using encryption in my application to increase security and allow user data to be safer. After researching the security and difficulty factors of different method of encryption, I decided on a form of Caesar Cipher.
+
+### Limitations:
+Limitations can be seen in to be present in two major areas knowledge, and hardware.
+
+Hardware causes a limitation in the creation and functionality of the application. This is down to the current location of the database being local to the user, even though that application is in a complete state. When a job is listed it will only affect the local database. This would lead to it not being displayed to any user outside of the device which the listing has been created.
+
+This problem could be easily solved with a central server which holds the database, allowing every user to have access to all listings created by other users, no matter the geological distance. 
+
+Knowledge will lead to limitation in the quality of the application but, unlike hardware limitations, I will be able to overcome this limitation with a range of research into methods and inbuilt functions to help with the creation and increase the efficiency of the application. (Research I completed can be found in Research under the design section.) 
+
+
+
+### Aims and Objectives:
+Main objectives are objectives which must be completed, unlike secondary objective which could be completed to help improve the application but are not mandatory. 
+
+#### Creating a database:
+- Databases should consist of separate tables, consisting of all atomic data.
+- Tables must be normalised (normalization is the process of organizing data in a database).
+  
+#### Create a login page:
+- This will be the first page which is seen by users when the programme is started.
+- A button will be needed to be able to call the Create account page, quit the application, and sign in.
+- Entry boxes will be created to allow the user to enter their username and password.
+- Label will be displayed to show the user what each entry box is linked to.
+- An image (application logo) will need to be placed at the top of the screen.
+- Validation on user inputs will need to be carried out (all fields filled and correct length).
+- Validation will need to be carried out to see if the username and password are correct.
+- If validation is passing the Main page should be opened.
+- Error messages are to be displayed if any invalid entries are detected.
+- The GUI should be made user-friendly by keeping all paged on a single page and easy to understand labels, button, tree views and layout.
+  
+#### Create a Creating account page:
+- This will be displayed to the user if the “Create new account” button is pressed (on the Login page). 
+- A button will be needed to be able to create a new account and quit the application.
+- Entry boxes will be created to allow the user to enter their account details (username, password, name, email, age).
+- A tick box will be needed to give the user the option to create an admin account (if box is selected as entry box, it should replace the tick box to give the user the opportunity to enter an amin code).
+- Label will be displayed to show the user what each entry box is linked to. 
+- An image (application logo) will need to be placed at the top of the screen. 
+- Validation on user inputs will need to be carried out (all fields filled, entries consist of the correct data type, email is valid (if @ is present), and if the admin code correct if selected).
+- Validation will need to be carried out to see if the username is not taken.
+- If validation passes, the account should be created (details saved to database).
+- Error messages should be displayed if any invalid entries are detected. 
+- The GUI should be made user-friendly by keeping all paged on a single page and easy to understand labels, button, tree views and layout.
+
+#### Create a Main page:
+- This will be displayed to the user if the “sign in” button is pressed (on the Login page and validation is passed). 
+- A button will be needed to be able to add a job listing, view favourite, add a favourite, view applicants, apply to a job, filter, delete job, view extra information, refresh trees, and close the page.
+- Label will be displayed to show the user what each entry box is linked to. 
+- Tree view needs to be created. A main tree view which displays the job information and a secondary tree which is used to display favours or applicant data. 
+- A way to select data on the main tree is needed.
+- Validation will need to be carried out to see if the search returns no data.
+- Validation is needed to see if a job is selected when needed.
+- Error messages should be displayed if any invalid entries or selected are detected. 
+- The ability to save the details (Job title, applicant name, and applicant contact details) of applicants to user jobs in an external file. 
+- The GUI should be made user-friendly by keeping all paged on a single page and easy to understand labels, button, tree views and layout.
+
+#### Create Upload job page:
+- This will be displayed to the user if the “Add Job” button is pressed (on the Main page).
+- A button will be needed to be able to create a new job listing and close the page.
+- Entry boxes will be created to allow the user to enter their job details (Company name, job title, age requirement, location, hours, pay, and job description).
+- A tick box will be needed to give the user the option to add extra information (if box is selected as entry box should replace the tick box to give the user the opportunity to enter the information).
+- Label will be displaced to show the user what each entry box is linked to. 
+- Validation on user inputs will need to be carried out (all fields filled; entries consist of the correct data type).
+- Validation will need to be carried out to see if the username is not taken.
+- If validation passes, the job should be created (details saved to database).
+- Error messages should be displayed if any invalid entries are detected. 
+- The GUI should be made user-friendly by keeping all paged on a single page and easy to understand labels, button, tree views and layout. 
+
+#### Secondary objectives:
+- A filter option which can be applied to the main tree.
+- A tick box will be needed to give the user the option to filter the order that data is represented on the tree views.
+- A drop down to help with the filter option. 
+- Entry boxes will be created to allow the user to enter a search for a job.
+- Create a way for the user to add the people which have applied to their jobs too an external file. 
+
+
